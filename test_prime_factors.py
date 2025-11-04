@@ -7,7 +7,7 @@ from prime_factors import (
     print_prime_factors,
 )
 
-
+# VALIDATE USER INPUTS TESTS
 @pytest.mark.parametrize(
     "value,expected",
     [
@@ -33,7 +33,7 @@ def test_zero_or_negative_values(capsys, value):
     captured = capsys.readouterr()
     assert "Number should not be zero or less" in captured.out
 
-
+# TEST PRIME FACTORING
 @pytest.mark.parametrize(
     "value, expected",
     [
@@ -67,3 +67,5 @@ def test_print_prime_factors(capsys, value):
     captured = capsys.readouterr()
     for n in value:
         assert f"Prime factor found: {n}" in captured.out
+
+# TODO: OUTPUT TXT AND DATABASE TESTS

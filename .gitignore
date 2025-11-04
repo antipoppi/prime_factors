@@ -224,3 +224,7 @@ __marimo__/
 # Ignore all local history of files
 .history
 .ionide
+
+### App generated files (txt, db)
+prime_factors_output.txt
+prime_factors.db
